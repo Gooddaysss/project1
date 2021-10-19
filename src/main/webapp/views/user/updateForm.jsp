@@ -58,6 +58,7 @@ body{
 			<div class="form-group">
 				<label for="img">IMG</label>
 				<input type="file" class="form-control" name="file" />
+		
 			</div>
 			
 			<div style="center;">

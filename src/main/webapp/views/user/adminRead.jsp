@@ -167,7 +167,11 @@
 								</td>
 								<td>
 									<input type="hidden" name="ratingno" value="<c:out value="${i.ratingno}"/>">
+									<c:choose>
+									<c:when test="${sessionScope.userno==i.userno }">
 									<a href="adminRead?userno=${userInfo.userno }" onclick="form9.submit()">삭제</a>
+									</c:when>	
+									</c:choose>							
 								</td>
 							</tr>
 						</c:forEach>

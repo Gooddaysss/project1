@@ -65,7 +65,7 @@
 				<tr>
 					<td><c:out value="${i.boardno}"/></td>
 					<c:choose>
-						<c:when test="${i.password ne null}">
+						<c:when test="${i.password ne null and sessionScope.roletype == 'USER' and sessionScope.name != i.userno}">
 							<td><a href="${link}" onclick="return pwCheck('${i.password}');" ><c:out value="${i.title}"/>[<c:out value="${i.count}"/>]</a><img src="views/image/잠금.png" style="width: 20px; height: 20px;"></td>
 						</c:when>
 						<c:otherwise>

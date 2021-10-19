@@ -117,7 +117,7 @@ body {
 
 						<tr>
 							<td>
-								<c:out value="${i.name }" />
+								<c:out value="${i.userno }" />
 							</td>
 							<td>
 								<c:out value="${i.replycontent }" />
@@ -129,8 +129,9 @@ body {
 							
 							<td>
 								<input type="hidden" name="replyno" value="<c:out value="${i.replyno}"/>">
+		
 								<c:choose>
-									<c:when test="${sessionScope.userno == i.userno }">
+									<c:when test="${sessionScope.name == i.userno }">
 								<a href="boardRead?boardno=${boardInfo.boardno}" onclick="form3.submit()">삭제</a>
 									</c:when>
 								</c:choose>

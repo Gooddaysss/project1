@@ -36,9 +36,9 @@
 </delete>
 
 <select id="messageRead" parameterType="String" resultType="mdto">
-	SELECT *
-	FROM MESSAGE
-	WHERE MESSAGENO = #{messageno}
+	SELECT M.SNO, U.NAME AS NOWDATE, M.MCONTENT
+	FROM MESSAGE M, XUSER U
+	WHERE M.SNO = U.USERNO AND MESSAGENO = #{messageno}
 	
 </select> 
 

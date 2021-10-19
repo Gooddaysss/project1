@@ -26,16 +26,8 @@ public class RatingDao {
 		return ss.selectList(namespace + "selectRatingList", adminno);
 	}
 	
-	public RatingDto selectRatingOne(String ratingno) throws Exception{
-		return ss.selectOne(namespace + "selectRatingOne", ratingno);
-	}
-	
 	public void insertRating(RatingDto dto) throws Exception{
 		ss.insert(namespace + "insertRating", dto);
-	}
-	
-	public void updateRating(RatingDto dto) throws Exception{
-		ss.update(namespace + "updateRating", dto);
 	}
 	
 	public void deleteRating(String ratingno) throws Exception{

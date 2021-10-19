@@ -34,7 +34,7 @@ body {
 						
 						<td>
 							
-							<input readonly="readonly"  type="text" class="form-control" name="sno" maxlength="40" value="<c:out value="${messageInfo.sno }"/>">
+							<input readonly="readonly"  type="text" class="form-control" name="sno" maxlength="40" value="<c:out value="${messageInfo.nowdate }"/>">
 						</td>
 					</tr>
 				</thead>
