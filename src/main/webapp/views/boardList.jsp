@@ -108,6 +108,19 @@
 
 		
 		<div style="text-align: right; margin-bottom: 30; margin-right: 10">
+				   			<form action="selectSearchList" method="post">
+		
+				                              
+				<select id="select" name="select" size="1" style="width:10%">
+					<option value="all" selected>전체</option>
+					<option value="title">제목</option>
+					<option value="writer">작성자</option>
+					<option value="content">내용</option>
+				</select>
+				
+			<input type="text" id="mySearch" name="search" style="height: 25px" onkeyup="myFunction()" placeholder="검색.." title="Type in a category">
+			
+		</form>
 		<button type="button" class="btn btn-primary" id="btnWriteForm">글쓰기</button>
 	</div>
 	</div>
